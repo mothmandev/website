@@ -1,0 +1,116 @@
+
+:root {
+    --background:   rgb(46,52,64);
+    --foreground:   rgb(216,222,233);
+    --cursor:       rgb(216,222,233);
+    --black:        rgb(59,66,82);
+    --red:          rgb(191,97,106);
+    --green:        rgb(163,190,140);
+    --yellow:       rgb(235,203,139);
+    --blue:         rgb(129,161,193);
+    --magenta:      rgb(180,142,173);
+    --cyan:         rgb(136,192,208);
+    --white:        rgb(229,233,240);
+
+    --bold-black:   rgb(76,86,106);
+    --bold-red:     rgb(191,97,106);
+    --bold-green:   rgb(163,190,140);
+    --bold-yellow:  rgb(235,203,139);
+    --bold-blue:    rgb(129,161,193);
+    --bold-magenta: rgb(180,142,173);
+    --bold-cyan:    rgb(143,188,187);
+    --bold-white:   rgb(236,239,244);
+}
+
+.black      { color: var(--black) }
+.red        { color: var(--red) }
+.green      { color: var(--green) }
+.yellow     { color: var(--yellow) }
+.blue       { color: var(--blue) }
+.magenta    { color: var(--magenta) }
+.cyan       { color: var(--cyan) }
+.white      { color: var(--white) }
+
+.bg-black      { background-color: var(--black) }
+.bg-red        { background-color: var(--red) }
+.bg-green      { background-color: var(--green) }
+.bg-yellow     { background-color: var(--yellow) }
+.bg-blue       { background-color: var(--blue) }
+.bg-magenta    { background-color: var(--magenta) }
+.bg-cyan       { background-color: var(--cyan) }
+.bg-white      { background-color: var(--white) }
+
+.bblack     { font-weight: 700; color: var(--bold-black) }
+.bred       { font-weight: 700; color: var(--bold-red) }
+.bgreen     { font-weight: 700; color: var(--bold-green) }
+.byellow    { font-weight: 700; color: var(--bold-yellow) }
+.bblue      { font-weight: 700; color: var(--bold-blue) }
+.bmagenta   { font-weight: 700; color: var(--bold-magenta) }
+.bcyan      { font-weight: 700; color: var(--bold-cyan) }
+.bwhite     { font-weight: 700; color: var(--bold-white) }
+
+.bold {
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(https://cdn.wallpapersafari.com/21/84/Kf6L0R.jpg);
+    background-size: cover;
+    font-family: 'Fira Code', monospace;
+    /* font-family: 'Roboto', sans-serif; */
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+#topbar {
+    background-color: var(--background);
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--cyan);
+    padding: 0 1rem;
+    opacity: 0.9;
+}
+
+#topbar h1 {
+    font-size: 1rem;
+}
+
+div.terminal {
+    position: absolute;
+    border: 2px solid var(--cyan);
+    background-color: var(--background);
+    opacity: 0.9;
+    padding: 1rem;
+}
+
+div#about {
+    top: 5rem;
+    left: 5rem;
+    width: 40rem;
+    height: 30rem;
+}
+
+div#projects {
+    bottom: 10rem;
+    right: 5rem;
+    width: 40rem;
+    height: 30rem;
+}
