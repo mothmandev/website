@@ -114,3 +114,22 @@ div#projects {
     height: 30rem;
 }
 
+@media only screen and (max-width: 1500px) {
+    div.terminal {
+        position: relative;
+        margin: 1rem
+    }
+    div#about {
+        top: unset;
+        left: unset;
+        width: unset;
+        height: unset;
+    }
+    div#projects {
+        bottom: unset;
+        right: unset;
+        width: unset;
+        height: unset;
+    }
+}
+
